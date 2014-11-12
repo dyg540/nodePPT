@@ -24,7 +24,7 @@ files: /js/demo.js,/css/demo.css
 * 支持18种转场动画，可以设置单页动画
 * 支持单页背景图片
 * 多种模式：overview模式，双屏模式，socket远程控制，摇一摇换页
-* 可以使用画板，可以使用note做备注
+* 可以使用双屏互动的画板，可以使用note做备注
 * 支持语法高亮，自由选择highlight样式
 * 可以单页ppt内部动画，单步动画
 * 支持进入/退出回调，做在线demo很方便
@@ -137,7 +137,7 @@ nodeppt：https://github.com/ksky521/nodePPT
 
 
 [slide]
-## 一些Tag的样式，多个背景测试
+## 一些Tag的样式，背景测试
 ----
 
 <button>按钮</button>
@@ -151,32 +151,14 @@ nodeppt：https://github.com/ksky521/nodePPT
 > 这是一个class是：pull-right的blockquote <small>small一下</small> {:&.pull-right}
 
 [slide]
-## 一些Tag的样式，多个背景测试
+## 自定义theme
 ----
+* 自定义主皮肤，查看[theme.moon.scss](https://github.com/ksky521/nodePPT/blob/master/assets/scss/theme.moon.scss)
+* 自定义pdf样式，查看[pdf.scss](https://github.com/ksky521/nodePPT/blob/master/assets/scss/pdf.scss)
 
-<button>按钮</button>
-
-<a href="#">链接</a>
-
-> 这是一个blockquote <small>small一下</small>
-
-这是一个p标签
-
-> 这是一个class是：pull-right的blockquote <small>small一下</small> {:&.pull-right}
-
-[slide]
-## 一些Tag的样式，多个背景测试
-----
-
-<button>按钮</button>
-
-<a href="#">链接</a>
-
-> 这是一个blockquote <small>small一下</small>
-
-这是一个p标签
-
-> 这是一个class是：pull-right的blockquote <small>small一下</small> {:&.pull-right}
+**P.S.**
+ * 直接`ctrl+p`就可以查看打印样式哦，还可以在打印窗口选择另存为pdf
+ * 样式通过在头声明里面的files引入，例如 files: theme.moon.css, pdf.css
 
 [slide]
 
@@ -282,6 +264,13 @@ markdown语法如下：
 按下键盘【P】键。按下鼠标左键，在此处乱花下看看效果。
 
 按下键盘【C】键。清空画板
+
+[slide]
+
+## 使用画笔
+---
+画板标记是可以同步的，下图是使用socket模式下，ipad画的同步到pc窗口~
+![画板标记同步](/multi-screen.jpg "画板标记同步")
 
 [slide]
 
